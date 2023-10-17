@@ -1,3 +1,9 @@
-window.onload = function () {
-  let game = new Phaser.Game();
+const config = {
+  width: 256,
+  height: 272,
+  backgroundColor: 0x000000,
+  scene: [Scene1, Scene2],
+  pixelArt: true,
 };
+
+let game = new Phaser.Game(config);
